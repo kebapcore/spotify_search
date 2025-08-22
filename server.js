@@ -1,9 +1,12 @@
-
 import express from 'express';
 import fetch from 'node-fetch';
 import cron from 'node-cron';
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config(); // burayı ekledik
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
